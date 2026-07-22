@@ -1,4 +1,4 @@
-# 🌌 Personal Developer Portfolio - Vasundhara D P
+# Vasundhara DP-AIML Engineer Portfolio
 
 Welcome to my personal developer portfolio! This is a modern, high-performance, single-page web application designed to showcase my skills, projects, work experience, and achievements in Artificial Intelligence, Machine Learning, Computer Vision, and Full-Stack development.
 
