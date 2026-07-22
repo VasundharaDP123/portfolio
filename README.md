@@ -1,6 +1,12 @@
-# Vasundhara DP-AIML Engineer Portfolio
+# 🚀 Vasundhara DP-AIML Engineer Portfolio
 
-Welcome to my personal developer portfolio! This is a modern, high-performance, single-page web application designed to showcase my skills, projects, work experience, and achievements in Artificial Intelligence, Machine Learning, Computer Vision, and Full-Stack development.
+[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=flat-square&logo=vercel)](https://portfolio-vasundhara-dp.vercel.app)
+
+Welcome to the source code of my professional portfolio! I am an AI/ML Engineering student with hands-on experience building AI-powered applications, computer vision pipelines, and scalable backend services.
+
+## 🌐 Live Website
+
+You can view the live site here: **[https://portfolio-vasundhara-dp.vercel.app/](https://portfolio-vasundhara-dp.vercel.app/)**
 
 Built entirely using **semantic HTML5**, **custom Vanilla CSS** (featuring obsidian glassmorphism, responsive grids, and smooth animations), and **modular JavaScript** (handling scroll-reveal tracking, project filtering, and local picture fallbacks).
 
