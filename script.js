@@ -203,25 +203,4 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
     }
-
-    // 8. Auto-detect profile image 'profile.jpg' in root folder
-    const profileImg = new Image();
-    profileImg.src = 'profile.jpg';
-    profileImg.onload = () => {
-        // If image exists, hide the code mockup and overlay the profile photo
-        const visualBlobWrapper = document.querySelector('.visual-blob-wrapper');
-        const visualContent = document.querySelector('.visual-content');
-        if (visualBlobWrapper && visualContent) {
-            visualContent.style.opacity = '0';
-            setTimeout(() => {
-                visualContent.style.display = 'none';
-            }, 300);
-            
-            const imgEl = document.createElement('img');
-            imgEl.src = 'profile.jpg';
-            imgEl.alt = 'Vasundhara D P';
-            imgEl.className = 'profile-img';
-            visualBlobWrapper.appendChild(imgEl);
-        }
-    };
 });

@@ -28,6 +28,7 @@
                     <li><a href="#skills" class="nav-link">Skills</a></li>
                     <li><a href="#projects" class="nav-link">Projects</a></li>
                     <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#open-source" class="nav-link">Open Source</a></li>
                     <li><a href="#certifications" class="nav-link">Certifications</a></li>
                     <li><a href="#contact" class="nav-link btn-contact">Get in Touch</a></li>
                 </ul>
@@ -63,7 +64,9 @@
                 <div class="hero-visual">
                     <div class="visual-blob-wrapper">
                         <div class="visual-blob"></div>
-                        <div class="visual-content">
+                        <!-- Native load handler for profile image -->
+                        <img src="profile.jpg" id="profile-pic" alt="Vasundhara D P" class="profile-img" style="display: none;" onload="this.style.display='block'; document.getElementById('code-fallback').style.display='none';">
+                        <div class="visual-content" id="code-fallback">
                             <pre><code><span class="code-keyword">import</span> torch
 <span class="code-keyword">import</span> cv2
 
@@ -330,36 +333,47 @@ vision = cv2.CascadeClassifier()
             </div>
         </section>
 
-        <!-- Experience & Open Source Section -->
+        <!-- Experience Section -->
         <section id="experience" class="experience-section section-padding">
             <div class="container">
-                <h2 class="section-title text-center" data-reveal>Experience & Open Source</h2>
-                <div class="timeline">
-                    <!-- Freelance Developer -->
-                    <div class="timeline-item" data-reveal="left">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-date">2026 – Present</div>
-                        <div class="timeline-content glass-card">
-                            <h3>Freelance AI Developer</h3>
-                            <span class="timeline-org">Styvoe (AI Travel Stylist)</span>
-                            <ul class="experience-details">
-                                <li>Developed and deployed <strong>Styvoe</strong>, a culturally intelligent AI travel stylist application utilizing FastAPI and React to deliver personalized, weather-appropriate outfit recommendations based on user preferences.</li>
-                                <li>Integrated historical climate data via Open-Meteo API to auto-inject real-world temperature context, optimizing LLM prompts (GPT-4o-mini) to generate tailored, modest-compliant, or western styling recommendations.</li>
-                                <li>Engineered dynamic product catalog search with the Amazon Creator API, mapping affiliate links (styvoe-20) to generated outfit categories, and built a resilient backend fallback that silently handles API timeouts using placeholder cards.</li>
-                                <li>Implemented real-time structured content streaming using Server-Sent Events (SSE) and partial JSON parsing in React, achieving sub-second interactive load times and a seamless user experience.</li>
-                            </ul>
+                <h2 class="section-title text-center" data-reveal>Work Experience</h2>
+                <div class="experience-container" data-reveal>
+                    <div class="glass-card experience-card-main">
+                        <div class="experience-header">
+                            <div>
+                                <h3>Freelance AI Developer</h3>
+                                <span class="timeline-org">Styvoe (AI Travel Stylist)</span>
+                            </div>
+                            <span class="experience-date">2026 – Present</span>
                         </div>
+                        <ul class="experience-details">
+                            <li>Developed and deployed <strong>Styvoe</strong>, a culturally intelligent AI travel stylist application utilizing FastAPI and React to deliver personalized, weather-appropriate outfit recommendations based on user preferences.</li>
+                            <li>Integrated historical climate data via Open-Meteo API to auto-inject real-world temperature context, optimizing LLM prompts (GPT-4o-mini) to generate tailored, modest-compliant, or western styling recommendations.</li>
+                            <li>Engineered dynamic product catalog search with the Amazon Creator API, mapping affiliate links (styvoe-20) to generated outfit categories, and built a resilient backend fallback that silently handles API timeouts using placeholder cards.</li>
+                            <li>Implemented real-time structured content streaming using Server-Sent Events (SSE) and partial JSON parsing in React, achieving sub-second interactive load times and a seamless user experience.</li>
+                        </ul>
                     </div>
+                </div>
+            </div>
+        </section>
 
-                    <!-- Open Source GSSoC -->
-                    <div class="timeline-item" data-reveal="right">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-date">Summer 2026</div>
-                        <div class="timeline-content glass-card">
-                            <h3>Open Source Contributor</h3>
-                            <span class="timeline-org">GirlScript Summer of Code (GSSoC)</span>
-                            <p>Contributed to <strong>knoxiboy/DoubtDesk</strong> by successfully merging database migration workflows and security enhancements (PR #740 & #741). Engaged in GitHub discussions, issue tracking, and automated CI workflows.</p>
+        <!-- Open Source Section -->
+        <section id="open-source" class="open-source-section section-padding">
+            <div class="container">
+                <h2 class="section-title text-center" data-reveal>Open Source Contributions</h2>
+                <div class="open-source-container" data-reveal>
+                    <div class="glass-card open-source-card">
+                        <div class="experience-header">
+                            <div>
+                                <h3>Open Source Contributor</h3>
+                                <span class="timeline-org">GirlScript Summer of Code (GSSoC)</span>
+                            </div>
+                            <span class="experience-date">Summer 2026</span>
                         </div>
+                        <ul class="experience-details">
+                            <li>Merged 2 pull requests (PR #740 and PR #741) in <strong>knoxiboy/DoubtDesk</strong>, implementing database migration scripts and security enhancements.</li>
+                            <li>Collaborated through GitHub workflows, code reviews, and issue discussions.</li>
+                        </ul>
                     </div>
                 </div>
             </div>

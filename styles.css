@@ -931,6 +931,49 @@ body::after {
     font-size: 1.1rem;
 }
 
+/* Experience & Open Source Card Styles */
+.experience-container, .open-source-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.experience-card-main, .open-source-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.experience-card-main::before, .open-source-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--grad-primary);
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.experience-header h3 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.4rem;
+    color: var(--text-primary);
+}
+
+.experience-date {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    color: var(--accent-cyan);
+    font-size: 1.1rem;
+}
+
 /* Certifications Grid */
 .certs-grid {
     display: grid;
