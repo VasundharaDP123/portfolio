@@ -415,37 +415,13 @@ vision = cv2.CascadeClassifier()
                             <span class="experience-date">Summer 2026</span>
                         </div>
                         <p class="experience-hook">
-                            Successfully resolved critical production vulnerabilities and database bugs in a collaborative doubt-solving platform. Migrated database connection drivers to support transaction atomicity across 11 core write operations, closed privilege escalation pathways to protect classroom analytics, and debugged the project's Jest test suites and GitHub Actions CI pipelines to ensure 100% build reliability.
+                            Active open-source contributor during the GirlScript Summer of Code program, focused on resolving critical database, security, and automated testing bottlenecks.
                         </p>
-                        
-                        <div class="contribution-subsections">
-                            <div class="contribution-item">
-                                <h4>🛠️ Database Transaction Support & Driver Migration (PR #740)</h4>
-                                <p><strong>Problem:</strong> The platform was using the Neon HTTP driver which does not support interactive transactions, causing runtime crashes across 11 critical write paths (reply voting, classroom creation, moderation blocks, etc.).</p>
-                                <p><strong>Solution:</strong> Migrated database connection configuration to the Neon Serverless Pool (WebSocket driver) and wrapped multi-step operations (moderation increments, blocks) in atomic, concurrent-safe database transactions.</p>
-                                <div class="contribution-tech">
-                                    <span>Next.js</span> <span>TypeScript</span> <span>Drizzle ORM</span> <span>PostgreSQL (Neon)</span>
-                                </div>
-                            </div>
-                            
-                            <div class="contribution-item">
-                                <h4>🔒 Security & Privilege Escalation Prevention (PR #741)</h4>
-                                <p><strong>Problem:</strong> Detected a privilege escalation vulnerability where student accounts could self-promote to teacher roles, bypass authorization guards, and access private classroom analytics.</p>
-                                <p><strong>Solution:</strong> Implemented server-side role verification and membership guards using Clerk auth, securing classroom join flows and metrics endpoints.</p>
-                                <div class="contribution-tech">
-                                    <span>Clerk Auth</span> <span>Next.js API Routes</span> <span>TypeScript</span> <span>Drizzle ORM</span>
-                                </div>
-                            </div>
-                            
-                            <div class="contribution-item">
-                                <h4>🧪 Testing Suite & CI/CD Pipeline Optimization</h4>
-                                <p><strong>Problem:</strong> CI pipeline blockages from duplicate migration file indexes on main and unit test failures due to a major Inngest SDK version upgrade.</p>
-                                <p><strong>Solution:</strong> Resolved duplicate database migration files and refactored Jest test files to match the new Inngest SDK execution patterns, directly invoking functions and mocking success objects.</p>
-                                <div class="contribution-tech">
-                                    <span>Jest</span> <span>Inngest SDK</span> <span>GitHub Actions</span> <span>Husky</span>
-                                </div>
-                            </div>
-                        </div>
+                        <ul class="experience-details">
+                            <li>Implemented Neon Serverless WebSocket Pool to support interactive transactions, wrapping 11 critical multi-step database write paths (such as reply voting, classroom creation, and user blocks) in atomic, race-condition-safe transactions using Drizzle ORM.</li>
+                            <li>Prevented student privilege escalation by configuring server-side role verification and membership guards with Clerk authentication, securing private metrics endpoints and classroom joining flows.</li>
+                            <li>Optimized the project's CI/CD pipeline by resolving duplicate migration file conflicts on the main branch, updating Jest unit tests to align with newer Inngest SDK execution wrappers, and fixing broken API response assertions.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
