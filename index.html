@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vasundhara D P | AI/ML Developer Portfolio</title>
+    <meta name="description" content="Portfolio of Vasundhara D P, an AI/ML developer specializing in RAG, Computer Vision, and scalable backend applications.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="main-header">
+        <div class="container header-container">
+            <a href="#hero" class="logo">
+                <span class="logo-accent">&lt;</span>Vasundhara<span class="logo-accent"> /&gt;</span>
+            </a>
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                    <li><a href="#contact" class="nav-link btn-contact">Get in Touch</a></li>
+                </ul>
+            </nav>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle Navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="hero-greeting">Hi, my name is</span>
+                    <h1 class="hero-title">Vasundhara D P</h1>
+                    <h2 class="hero-subtitle">I build <span class="typing-text" id="typing-text"></span><span class="cursor">|</span></h2>
+                    <p class="hero-description">
+                        Artificial Intelligence and Machine Learning undergraduate specializing in building AI-powered applications, computer vision pipelines, and scalable backend services.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">View My Work <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="resume.pdf" download class="btn btn-secondary"><i class="fa-solid fa-download"></i> Download CV</a>
+                        <a href="#contact" class="btn btn-secondary">Let's Connect</a>
+                    </div>
+                    <div class="hero-socials">
+                        <a href="https://github.com/VasundharaDP123" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://linkedin.com/in/vasundharadp" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="mailto:dpvasundhara@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="visual-blob-wrapper">
+                        <div class="visual-blob"></div>
+                        <div class="visual-content">
+                            <pre><code><span class="code-keyword">import</span> torch
+<span class="code-keyword">import</span> cv2
+
+<span class="code-comment"># AI/ML Pipeline</span>
+model = load_llm(<span class="code-string">"RAG-Agent"</span>)
+vision = cv2.CascadeClassifier()
+
+<span class="code-keyword">def</span> <span class="code-func">predict</span>(frame):
+    landmarks = vision(frame)
+    response = model.query(landmarks)
+    <span class="code-keyword">return</span> response</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#about" class="scroll-indicator" aria-label="Scroll to About Section">
+                <span class="mouse-icon"><span class="wheel"></span></span>
+            </a>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section section-padding">
+            <div class="container">
+                <h2 class="section-title text-center" data-reveal>About Me</h2>
+                <div class="about-grid">
+                    <div class="about-info" data-reveal="left">
+                        <h3 class="about-subtitle">AI/ML Student & Developer</h3>
+                        <p class="about-text">
+                            I am a third-year Bachelor of Engineering student in Artificial Intelligence and Machine Learning at Sir M. Visvesvaraya Institute of Technology, Bengaluru. My passion lies at the intersection of deep learning, computer vision, and robust backend engineering.
+                        </p>
+                        <p class="about-text">
+                            With hands-on freelance experience and active contributions to open-source programs like GirlScript Summer of Code (GSSoC), I build products that solve real-world problems. Whether it's translating sign language in real-time or building enterprise-grade RAG applications, I enjoy tackling complex architectural challenges.
+                        </p>
+                        <div class="about-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Location:</span>
+                                <span class="detail-val">Bengaluru, Karnataka, India</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Interests:</span>
+                                <span class="detail-val">Generative AI, Computer Vision, MLOps, Backend Dev</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-cards" data-reveal="right">
+                        <!-- Education Card -->
+                        <div class="glass-card education-card">
+                            <div class="card-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                            <h3>Education</h3>
+                            <h4 class="inst-name">Sir M. Visvesvaraya Institute of Technology</h4>
+                            <p class="degree">B.E. in Artificial Intelligence and Machine Learning</p>
+                            <span class="duration">Aug 2023 – May 2027</span>
+                            <div class="grades-grid">
+                                <div class="grade-item">
+                                    <span class="grade-num">9.1/10</span>
+                                    <span class="grade-label">CGPA</span>
+                                </div>
+                                <div class="grade-item">
+                                    <span class="grade-num">94.66%</span>
+                                    <span class="grade-label">Class XII</span>
+                                </div>
+                                <div class="grade-item">
+                                    <span class="grade-num">98.40%</span>
+                                    <span class="grade-label">Class X</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Quick Stats Card -->
+                        <div class="glass-card stats-card">
+                            <div class="card-icon"><i class="fa-solid fa-trophy"></i></div>
+                            <h3>Achievements</h3>
+                            <ul class="stats-list">
+                                <li>
+                                    <span class="stat-count">100+</span>
+                                    <span class="stat-desc">LeetCode Problems Solved</span>
+                                </li>
+                                <li>
+                                    <span class="stat-count">2+</span>
+                                    <span class="stat-desc">Production AI Models Deployed</span>
+                                </li>
+                                <li>
+                                    <span class="stat-count">GSSoC</span>
+                                    <span class="stat-desc">Open Source Contributor 2026</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section section-padding">
+            <div class="container">
+                <h2 class="section-title text-center" data-reveal>My Toolbelt</h2>
+                <p class="section-desc text-center" data-reveal>Technologies, frameworks, and programming languages I work with:</p>
+                <div class="skills-grid" data-reveal>
+                    <!-- Category: Languages -->
+                    <div class="skills-card glass-card">
+                        <h3><i class="fa-solid fa-code"></i> Programming</h3>
+                        <div class="skills-list">
+                            <span class="skill-badge"><i class="fa-brands fa-python"></i> Python</span>
+                            <span class="skill-badge">C Language</span>
+                            <span class="skill-badge">TypeScript</span>
+                        </div>
+                    </div>
+                    <!-- Category: AI/ML -->
+                    <div class="skills-card glass-card">
+                        <h3><i class="fa-solid fa-brain"></i> AI & ML</h3>
+                        <div class="skills-list">
+                            <span class="skill-badge">Machine Learning</span>
+                            <span class="skill-badge">Natural Language Processing</span>
+                            <span class="skill-badge">Computer Vision</span>
+                            <span class="skill-badge">Scikit-Learn</span>
+                            <span class="skill-badge">LLM APIs & Prompts</span>
+                            <span class="skill-badge">RAG Architectures</span>
+                        </div>
+                    </div>
+                    <!-- Category: Backend & MLOps -->
+                    <div class="skills-card glass-card">
+                        <h3><i class="fa-solid fa-server"></i> Backend & DevOps</h3>
+                        <div class="skills-list">
+                            <span class="skill-badge">FastAPI</span>
+                            <span class="skill-badge">Flask</span>
+                            <span class="skill-badge"><i class="fa-brands fa-docker"></i> Docker</span>
+                            <span class="skill-badge"><i class="fa-brands fa-github"></i> GitHub Actions</span>
+                            <span class="skill-badge">CI/CD</span>
+                            <span class="skill-badge"><i class="fa-brands fa-aws"></i> AWS EC2</span>
+                        </div>
+                    </div>
+                    <!-- Category: Frontend -->
+                    <div class="skills-card glass-card">
+                        <h3><i class="fa-solid fa-desktop"></i> Frontend</h3>
+                        <div class="skills-list">
+                            <span class="skill-badge"><i class="fa-brands fa-react"></i> React.js</span>
+                            <span class="skill-badge"><i class="fa-brands fa-html5"></i> HTML5 & CSS3</span>
+                            <span class="skill-badge"><i class="fa-brands fa-js"></i> JavaScript ES6</span>
+                        </div>
+                    </div>
+                    <!-- Category: Computer Vision -->
+                    <div class="skills-card glass-card">
+                        <h3><i class="fa-solid fa-eye"></i> Computer Vision</h3>
+                        <div class="skills-list">
+                            <span class="skill-badge">OpenCV</span>
+                            <span class="skill-badge">MediaPipe</span>
+                        </div>
+                    </div>
+                    <!-- Category: Databases & Data -->
+                    <div class="skills-card glass-card">
+                        <h3><i class="fa-solid fa-database"></i> Databases & Data</h3>
+                        <div class="skills-list">
+                            <span class="skill-badge">SQL</span>
+                            <span class="skill-badge">DBMS Concepts</span>
+                            <span class="skill-badge">Power BI</span>
+                            <span class="skill-badge">DAX</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section section-padding">
+            <div class="container">
+                <h2 class="section-title text-center" data-reveal>Featured Projects</h2>
+                
+                <!-- Category Filter Buttons -->
+                <div class="filter-wrapper" data-reveal>
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="ai-ml">AI/ML</button>
+                    <button class="filter-btn" data-filter="cv">Computer Vision</button>
+                    <button class="filter-btn" data-filter="web">Web Dev</button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid">
+                    <!-- Project 1: SineWave AI -->
+                    <div class="project-card glass-card" data-category="cv" data-reveal="fade">
+                        <div class="project-image-placeholder">
+                            <i class="fa-solid fa-hands-sign"></i>
+                            <div class="project-tags">
+                                <span>React</span>
+                                <span>TypeScript</span>
+                                <span>MediaPipe</span>
+                                <span>Flask</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>SineWave AI</h3>
+                            <h4 class="project-subtitle">Real-Time Sign Language Translation Suite</h4>
+                            <p>A web application achieving 95%+ hand-tracking accuracy. Features a custom gesture studio, a time-attack practice game, and an SVG analytics dashboard. Optimized to run at 30 FPS with sub-100 ms latency.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/VasundharaDP123" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> Code</a>
+                                <a href="#contact" class="btn-demo"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: HeatShield -->
+                    <div class="project-card glass-card" data-category="ai-ml" data-reveal="fade">
+                        <div class="project-image-placeholder">
+                            <i class="fa-solid fa-temperature-high"></i>
+                            <div class="project-tags">
+                                <span>React</span>
+                                <span>FastAPI</span>
+                                <span>Python</span>
+                                <span>Random Forest</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>HeatShield</h3>
+                            <h4 class="project-subtitle">AI-Powered Heatwave Prediction Platform</h4>
+                            <p>An meteorological prediction platform utilizing real-time meteorological and AQI data. Features a Random Forest machine learning model achieving 92% heatwave classification and prediction accuracy.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/VasundharaDP123" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> Code</a>
+                                <a href="#contact" class="btn-demo"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: DocuMind -->
+                    <div class="project-card glass-card" data-category="ai-ml" data-reveal="fade">
+                        <div class="project-image-placeholder">
+                            <i class="fa-solid fa-file-pdf"></i>
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>FastAPI</span>
+                                <span>RAG</span>
+                                <span>AWS EC2</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>DocuMind</h3>
+                            <h4 class="project-subtitle">Enterprise Retrieval-Augmented Generation</h4>
+                            <p>A secure RAG document interrogation application deployed on AWS EC2 instances. Implemented semantic search and text chunking strategies achieving 90% retrieval accuracy using LLM embedding APIs.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/VasundharaDP123" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> Code</a>
+                                <a href="#contact" class="btn-demo"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: Face Mesh Visualizer -->
+                    <div class="project-card glass-card" data-category="cv" data-reveal="fade">
+                        <div class="project-image-placeholder">
+                            <i class="fa-solid fa-face-smile"></i>
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>OpenCV</span>
+                                <span>MediaPipe</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Face Mesh Visualization</h3>
+                            <h4 class="project-subtitle">Real-Time Landmark & Blink Detection</h4>
+                            <p>A high-accuracy facial landmark mapping tool utilizing MediaPipe and OpenCV. Achieves 98% tracking accuracy. Features robust eye-blink count detection and real-time head angle tracking.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/VasundharaDP123" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> Code</a>
+                                <a href="#contact" class="btn-demo"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Open Source Section -->
+        <section id="experience" class="experience-section section-padding">
+            <div class="container">
+                <h2 class="section-title text-center" data-reveal>Experience & Open Source</h2>
+                <div class="timeline">
+                    <!-- Freelance Developer -->
+                    <div class="timeline-item" data-reveal="left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2026 – Present</div>
+                        <div class="timeline-content glass-card">
+                            <h3>Freelance AI Developer</h3>
+                            <span class="timeline-org">Styvoe (AI Travel Stylist)</span>
+                            <p>Designed and built Styvoe, a responsive AI travel styling application leveraging React and FastAPI. Crafted advanced LLM-powered recommendation pipelines generating weather-aware outfit selections for custom itineraries.</p>
+                        </div>
+                    </div>
+
+                    <!-- Open Source GSSoC -->
+                    <div class="timeline-item" data-reveal="right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Summer 2026</div>
+                        <div class="timeline-content glass-card">
+                            <h3>Open Source Contributor</h3>
+                            <span class="timeline-org">GirlScript Summer of Code (GSSoC)</span>
+                            <p>Contributed to <strong>knoxiboy/DoubtDesk</strong> by successfully merging database migration workflows and security enhancements (PR #740 & #741). Engaged in GitHub discussions, issue tracking, and automated CI workflows.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications & Achievements Section -->
+        <section id="certifications" class="certifications-section section-padding">
+            <div class="container">
+                <h2 class="section-title text-center" data-reveal>Certifications</h2>
+                <div class="certs-grid" data-reveal>
+                    <!-- Cert 1 -->
+                    <div class="cert-card glass-card">
+                        <div class="cert-icon"><i class="fa-solid fa-award"></i></div>
+                        <div class="cert-info">
+                            <h3>NPTEL (Elite)</h3>
+                            <p>Predictive Modelling with Applications</p>
+                            <span class="cert-details">Grade: 79% | 3 Credits</span>
+                        </div>
+                    </div>
+                    <!-- Cert 2 -->
+                    <div class="cert-card glass-card">
+                        <div class="cert-icon"><i class="fa-solid fa-cloud"></i></div>
+                        <div class="cert-info">
+                            <h3>Oracle Cloud Infrastructure</h3>
+                            <p>Certified AI Foundations Associate (2025)</p>
+                            <span class="cert-details">OCI Foundations</span>
+                        </div>
+                    </div>
+                    <!-- Cert 3 -->
+                    <div class="cert-card glass-card">
+                        <div class="cert-icon"><i class="fa-solid fa-database"></i></div>
+                        <div class="cert-info">
+                            <h3>Database Fundamentals</h3>
+                            <p>Certified in Introduction to the Fundamentals of Databases</p>
+                            <span class="cert-details">Database Basics Certification</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section section-padding">
+            <div class="container">
+                <h2 class="section-title text-center" data-reveal>Get in Touch</h2>
+                <p class="section-desc text-center" data-reveal>Have an opportunity or project you'd like to discuss? Drop me a message!</p>
+                
+                <div class="contact-grid">
+                    <div class="contact-info" data-reveal="left">
+                        <h3>Connect with Me</h3>
+                        <p>Feel free to reach out via email or connect on social media. I am open to freelance work, internships, and research collaborations.</p>
+                        
+                        <div class="contact-methods">
+                            <div class="method-item">
+                                <i class="fa-solid fa-envelope"></i>
+                                <div>
+                                    <h4>Email</h4>
+                                    <a href="mailto:dpvasundhara@gmail.com">dpvasundhara@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="method-item">
+                                <i class="fa-solid fa-phone"></i>
+                                <div>
+                                    <h4>Phone</h4>
+                                    <a href="tel:+917975857932">+91 79758 57932</a>
+                                </div>
+                            </div>
+                            <div class="method-item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <div>
+                                    <h4>Location</h4>
+                                    <span>Bengaluru, Karnataka, India</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-wrapper glass-card" data-reveal="right">
+                        <form id="portfolio-contact-form" class="contact-form">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" required placeholder=" ">
+                                <label for="name">Your Name</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" required placeholder=" ">
+                                <label for="email">Your Email</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="subject" name="subject" required placeholder=" ">
+                                <label for="subject">Subject</label>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" required rows="5" placeholder=" "></textarea>
+                                <label for="message">Your Message</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-submit">
+                                <span>Send Message</span> <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                        </form>
+                        <div id="form-success" class="form-success-message hidden">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <h3>Thank You!</h3>
+                            <p>Your message has been sent successfully. I'll get back to you shortly.</p>
+                            <button class="btn btn-secondary btn-reset">Send Another Message</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <p class="copyright">&copy; 2026 Vasundhara D P. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://github.com/VasundharaDP123" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+                <a href="https://linkedin.com/in/vasundharadp" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="mailto:dpvasundhara@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
