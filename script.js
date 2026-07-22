@@ -181,8 +181,22 @@ document.addEventListener('DOMContentLoaded', () => {
                 submitBtn.innerHTML = '<span>Sending...</span> <i class="fa-solid fa-spinner fa-spin"></i>';
                 submitBtn.disabled = true;
 
-                // Simulate API call/processing delay
-                setTimeout(() => {
+                // Send actual email via FormSubmit AJAX endpoint
+                fetch("https://formsubmit.co/ajax/dpvasundhara@gmail.com", {
+                    method: "POST",
+                    headers: { 
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        name: name,
+                        email: email,
+                        subject: subject,
+                        message: message
+                    })
+                })
+                .then(response => response.json())
+                .then(data => {
                     // Hide Form, Show Success Card
                     contactForm.classList.add('hidden');
                     successMessage.classList.remove('hidden');
@@ -191,7 +205,16 @@ document.addEventListener('DOMContentLoaded', () => {
                     submitBtn.innerHTML = originalBtnContent;
                     submitBtn.disabled = false;
                     contactForm.reset();
-                }, 1500);
+                })
+                .catch(error => {
+                    console.error('Error submitting form:', error);
+                    // Fallback visual feedback on error
+                    submitBtn.innerHTML = '<span>Error! Try Again</span>';
+                    submitBtn.disabled = false;
+                    setTimeout(() => {
+                        submitBtn.innerHTML = originalBtnContent;
+                    }, 3000);
+                });
             }
         });
 
