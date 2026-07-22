@@ -446,17 +446,15 @@ body::after {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-    animation: morph 8s ease-in-out infinite alternate;
-    border: 3.5px solid rgba(255, 255, 255, 0.1);
-    box-shadow: var(--shadow-lg);
+    border-radius: 50%;
+    border: 4px solid var(--accent-cyan);
+    box-shadow: 0 0 30px rgba(0, 242, 254, 0.6);
     z-index: 2;
     transition: all var(--transition-normal);
 }
 
 .profile-img:hover {
-    border-color: var(--accent-cyan);
-    box-shadow: var(--shadow-glow), var(--shadow-lg);
+    box-shadow: 0 0 45px rgba(0, 242, 254, 0.9);
     transform: scale(1.02);
 }
 

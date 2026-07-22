@@ -65,7 +65,7 @@
                     <div class="visual-blob-wrapper">
                         <div class="visual-blob"></div>
                         <!-- Native load handler for profile image -->
-                        <img src="profile.jpg" id="profile-pic" alt="Vasundhara D P" class="profile-img" style="display: none;" onload="this.style.display='block'; document.getElementById('code-fallback').style.display='none';">
+                        <img src="profile.jpg" id="profile-pic" alt="Vasundhara D P" class="profile-img" style="opacity: 0; transition: opacity 0.3s ease-in-out;">
                         <div class="visual-content" id="code-fallback">
                             <pre><code><span class="code-keyword">import</span> torch
 <span class="code-keyword">import</span> cv2

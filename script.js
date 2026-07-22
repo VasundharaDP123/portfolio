@@ -203,4 +203,28 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
     }
+
+    // 8. Image load listener & fallback logic
+    const profilePic = document.getElementById('profile-pic');
+    const codeFallback = document.getElementById('code-fallback');
+    const visualBlob = document.querySelector('.visual-blob');
+
+    if (profilePic && codeFallback && visualBlob) {
+        const handleImageLoad = () => {
+            codeFallback.style.display = 'none';
+            visualBlob.style.display = 'none';
+            profilePic.style.opacity = '1';
+        };
+
+        if (profilePic.complete && profilePic.naturalWidth > 0) {
+            handleImageLoad();
+        } else {
+            profilePic.addEventListener('load', handleImageLoad);
+            profilePic.addEventListener('error', () => {
+                profilePic.style.display = 'none';
+                codeFallback.style.display = 'block';
+                visualBlob.style.display = 'block';
+            });
+        }
+    }
 });
