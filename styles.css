@@ -895,10 +895,40 @@ body::after {
     margin-bottom: 15px;
 }
 
+.timeline-content {
+    text-align: left;
+}
+
 .timeline-content p {
     color: var(--text-secondary);
     font-size: 0.95rem;
     line-height: 1.5;
+}
+
+.experience-details {
+    list-style-type: none;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.experience-details li {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    position: relative;
+    padding-left: 20px;
+    line-height: 1.5;
+}
+
+.experience-details li::before {
+    content: '▹';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--accent-cyan);
+    font-weight: bold;
+    font-size: 1.1rem;
 }
 
 /* Certifications Grid */
