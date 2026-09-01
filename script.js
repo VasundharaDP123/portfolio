@@ -142,7 +142,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const cardCategory = card.getAttribute('data-category');
                 
                 // Add scale down animation / hiding class
-                if (categoryFilter === 'all' || cardCategory === categoryFilter) {
+                if (categoryFilter === 'all' || (cardCategory && cardCategory.includes(categoryFilter))) {
                     card.style.display = 'flex';
                     setTimeout(() => {
                         card.style.opacity = '1';

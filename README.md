@@ -37,6 +37,7 @@ Built entirely using **semantic HTML5**, **custom Vanilla CSS** (featuring obsid
 2. **About Me**: Brief bio, academics (Sir MVIT B.E. in AI/ML), achievements summary.
 3. **Skills**: Badges organized by category (Languages, AI/ML, Backend/DevOps, Frontend, Computer Vision, Data/Databases).
 4. **Projects**: Detailed project cards with tags, descriptions, code repositories, and filter triggers.
+   * *Netra Rakshaka (नेत्र रक्षक)* (Camera-Free Wearable IoT & Ocular Strain Mitigation)
    * *SineWave AI* (Sign Language Translation)
    * *HeatShield* (AI Heatwave Prediction)
    * *DocuMind* (Enterprise RAG App)
