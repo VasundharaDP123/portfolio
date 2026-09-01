@@ -40,7 +40,7 @@ Built entirely using **semantic HTML5**, **custom Vanilla CSS** (featuring obsid
    * *Netra Rakshaka (नेत्र रक्षक)* (Camera-Free Wearable IoT & Ocular Strain Mitigation)
    * *MLOps Placement Predictor* (End-to-End ML Pipeline & Telemetry Monitoring)
    * *GPS Accident Detection* (Real-Time Vehicle Crash Sensing & Alert Dispatch)
-   * *SineWave AI* (Sign Language Translation)
+   * *SignWave AI* (Sign Language Translation)
    * *HeatShield* (AI Heatwave Prediction)
    * *DocuMind* (Enterprise RAG App)
    * *Face Mesh Visualization* (Real-Time CV Tracking)
